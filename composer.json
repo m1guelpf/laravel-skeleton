@@ -1,0 +1,40 @@
+{
+    "name": "m1guelpf/:package_name",
+    "description": ":package_description",
+    "keywords": [
+        "m1guelpf",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/m1guelpf/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": "https://miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "M1guelpf\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M1guelpf\\Skeleton\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
